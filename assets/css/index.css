@@ -1,0 +1,2324 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../../assets/font/Comic.otf);
+}
+
+@font-face {
+    font-family: myfont1;
+    src: url(../../assets/font/Comic.otf);
+}
+
+html {
+    font-size: 45.5%;
+    scroll-behavior: smooth;
+    cursor: default;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+body{
+    background: #2D92CE;
+}
+
+/* -----------------------section1-------------
+---------------------- */
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 150vw;
+    background-image: url(../images/section1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+/* ---------------------------section1 navbar-------------
+--------------------- */
+
+.section1 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 70%;
+    height: auto;
+    padding: 1vw 7vw 2vw 7vw;
+    z-index: 1000;
+    border-bottom-left-radius: 7vw;
+    border-bottom-right-radius: 7vw;
+    background: radial-gradient(61.05% 61.05% at 50% 50%, #183762 0%, #033373 100%);
+}
+
+#btn1 {
+    padding: 1.1vw;
+    background: #ffffff;
+    border: 2px solid #00142D;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.5s;
+}
+
+#btn1:hover {
+    background: #477DFD;
+}
+
+#btn1:after {
+    content: '';
+    width: 2vw;
+    height: 2.4vw;
+    padding: 1.2vw;
+    background: #477DFD;
+    border: 2px solid #00142D;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: 4px;
+    z-index: -1;
+}
+
+#btn1 img {
+    padding: 0.2vw;
+    width: 2.2vw;
+    z-index: 3;
+}
+
+.section1 nav a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 5vw;
+    line-height: 5vw;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #188F51 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 2s;
+    animation: bounceInDown 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+}
+
+.section1 nav a:hover {
+    background-position: 0 0;
+    position: relative;
+    top: -0.2vw;
+}
+
+.section1 nav a img {
+    width: 5vw;
+    height: auto;
+}
+
+.section1 nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.section1 nav .nav-links a:nth-child(1) {
+    animation: bounceInDown 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+}
+
+.section1 nav .nav-links a:nth-child(2) {
+    animation: bounceInDown 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+}
+
+.section1 h1 {
+    margin-top: 17vw;
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 17vw;
+    line-height: auto;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    text-shadow: -5px 4px 0px #000000;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #000000;
+    animation: bounceInUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transition: all 1s;
+}
+
+.section1 h1:hover {
+    color: #6052C2;
+}
+
+.section1 .section1-img {
+    width: 40%;
+    height: auto;
+}
+
+.section1 .section1-img:hover {
+    animation: tada 1s;
+    animation-iteration-count: 1;
+}
+
+/* ------------------------------------section1 para's--------------
+---------------- */
+
+.section1 .first-para {
+    margin-top: 13vw;
+    margin-bottom: 1.5vw;
+}
+
+.section1 .first-para,.second-para {
+    font-family: 'Gochi Hand', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6vw;
+    line-height: 119.8%;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #6052C2 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 2s;
+}
+
+.section1 .first-para:hover,.second-para:hover {
+    background-position: 0 0;
+}
+
+.section1 .second-para {
+    padding: 0vw 15vw;
+    font-size: 4vw;
+}
+
+/* --------------------------------section1 buttons---------------
+-------------------- */
+
+.section1 .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding: 5vw 25%;
+}
+
+.section1 .buttons a {
+    width: 100%;
+    position: relative;
+}
+
+.section1 .buttons a img {
+    width: 100%;
+    height: auto;
+}
+
+/* ------------------------------section2-------------
+---------------- */
+svg {
+    position: relative;
+    top: 1vw;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #103F59;
+}
+
+/* ------------------------------section2 left-------------
+---------------- */
+
+.section2 .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 55%;
+    height: auto;
+    padding-top: 10vw;
+    padding-left: 13vw;
+}
+
+.section2 .left h2 {
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10vw;
+    line-height: 5vw;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    text-shadow: -5px 4px 0px #36B432;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #36B432;
+    transition: all 1s;
+}
+
+.section2 .left h2:hover {
+    color: #6052C2;
+}
+
+.section2 .left p {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.section2 .left a {
+    width: 40%;
+    position: relative;
+    left: -1vw;
+}
+
+.section2 .left a img {
+    width: 100%;
+}
+
+/* ------------------------------section2 right-------------
+---------------- */
+
+.section2 .right {
+    width: 45%;
+    height: auto;
+    padding-top: 2vw;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.section2 .right img {
+    width: 100%;
+}
+
+/* ------------------------------------section3--------------
+---------------- */
+
+.section3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background: #FFAB71;
+}
+
+/* ------------------------------------section3 left--------------
+---------------- */
+
+.section3 .left {
+    width: 50%;
+    height: auto;
+    padding-top: 8vw;
+}
+
+.section3 .left h1 {
+    margin-left: 13vw;
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10vw;
+    line-height: 9vw;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #000000;
+    text-shadow: -5px 4px 0px #000000;
+    transition: all 1s;
+}
+
+.section3 .left h1:hover{
+    color: #6052C2;
+}
+
+.section3 .left .images {
+    width: 100%;
+    padding-left: 7vw;
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section3 .left .images img:nth-child(1) {
+    width: 15vw;
+}
+
+.section3 .left .images img:nth-child(2) {
+    width: 8vw;
+}
+
+/* ------------------------------------section3 right--------------
+---------------- */
+
+.section3 .right {
+    width: 50%;
+    height: auto;
+    padding-top: 8vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+}
+
+.section3 .right .para1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 2.5vw;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #188F51 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 2s;
+}
+
+.section3 .right .para1:hover {
+    background-position: 0 0;
+}
+
+.section3 .right .bold {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.section3 .right a h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.8vw;
+    line-height: 1vw;
+    letter-spacing: 0.1vw;
+    color: #FFFFFF;
+    background-color: #36B432;
+    border-radius: 2vw;
+    width: 16vw;
+    height: auto;
+    border: 1px solid black;
+    text-shadow: 0.13vw 0.13vw 0.3vw #000000;
+    padding: 1vw;
+    transition: all 1s;
+    margin-top: 1vw;
+}
+
+.section3 .right a h3:hover {
+    background-color: #6052C2;
+}
+
+/* .section3 .right a {
+    margin-top: 1vw;
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 00;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    color: #FFFFFF;
+    text-transform: lowercase;
+    background: linear-gradient(to right, #6052C2 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 2s;
+}
+
+.section3 .right a:hover {
+    background-position:  0 0;
+} */
+
+.section3 .right .image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 3vw;
+    padding-right: 7vw;
+}
+
+.section3 .right img {
+    width: 15vw;
+    height: auto;
+}
+
+/* ------------------------------------section4--------------
+---------------- */
+
+.section4 {
+    width: 100%;
+    height: auto;
+    border-top: 4px solid #000000;
+    display: flex;
+    flex-direction: row;
+}
+
+.section4 h1 {
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10vw;
+    line-height: 9vw;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: #000000;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    text-shadow: -5px 4px 0px #000000;
+    transition: all 1s;
+}
+
+.section4 h1:hover {
+    color: #6052C2;
+}
+
+.section4 a img {
+    width: 15vw;
+    height: auto;
+}
+
+.section4 a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+}
+
+.section4 .left {
+    padding: 8vw 3vw 0vw 13vw;
+    width: 50%;
+    height: auto;
+    border-right: 4px solid #000000;
+    background: #DAFFD9;
+}
+
+.section4 .left p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.section4 .left .image a img {
+    width: 18vw;
+    position: relative;
+    left: -3vw;
+}
+
+.section4 .left .image {
+    margin-top: 1vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section4 .left #img1 {
+    width: 10vw;
+    height: auto;
+}
+
+/* ------------------------section4 right----------------
+--------------  */
+
+.section4 .right {
+    width: 50%;
+    padding: 8vw 5vw 0vw 3vw;
+    background: #FFDBDB;
+}
+
+.section4 .right p {
+    padding-right: 8vw;
+    margin: 3vw 0vw;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 2vw;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.section4 .right .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+/* -------------------------------------------Updated Section----------------
+--------------  */
+
+.update {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #FFD887;
+    padding: 8vw 3vw 1vw 13vw;
+    border-top: 4px solid #000000;
+}
+
+.update h1 {
+    width: 40%;
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10vw;
+    line-height: 9vw;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #000000;
+    text-shadow: -5px 4px 0px #000000;
+    transition: all 1s;
+}
+
+.update h1:hover {
+    color: #6052C2;
+}
+
+.update .partners {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.update .partners a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5vw;
+    line-height: 7vw;
+    letter-spacing: -0.04em;
+    background: linear-gradient(to right, #36B432 50%, #000000 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 2s;
+}
+
+.update .partners a:hover {
+    background-position: 0 0;
+}
+
+.update .partners a:nth-child(2) {
+    font-weight: 600;
+}
+
+.update .partners a img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.update .partners img {
+    width: 10vw;
+}
+
+/* -------------------------------------------section5----------------
+--------------  */
+
+.section5 {
+    padding: 5vw 13vw;
+    background-color: #80ABFF;
+}
+
+.section5 .container {
+    padding: 2vw;
+    border: 4px solid #000000;
+    border-radius: 3vw;
+    background-color: #FBF7EB;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ------------------------section5 left-side----------------
+--------------  */
+
+.section5 .container .left-side {
+    width: 70%;
+    height: auto;
+}
+
+.section5 .container .left-side h1 {
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10vw;
+    line-height: 9vw;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #000000;
+    text-shadow: -5px 4px 0px #000000;
+    transition: all 1s;
+}
+
+.section5 .container .left-side h1:hover {
+    color: #36B432;
+}
+
+.section5 .container .left-side h2 {
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    color: #000000;
+}
+
+.section5 .container .left-side p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.section5 .container .left-side .heading {
+    display: flex;
+    flex-direction:row;
+    gap: 2vw;
+}
+
+.section5 .container .left-side .heading h3 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.section5 .container .left-side .performa {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.section5 .container .left-side .performa .left {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.section5 .container .left-side .performa .right {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.section5 .container .left-side .performa .outer {
+    width: 11vw;
+    height: 4vw;
+    background: #477DFD;
+    border: 2px solid #000000;
+}
+
+.section5 .container .left-side .performa .inner {
+    padding: 0.7vw 1vw;
+    width: 11vw;
+    height: 4vw;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    position: relative;
+    top: -0.5vw;
+    left: -0.5vw;
+    transition: all 1s;
+}
+
+.section5 .container .left-side .performa .inner:hover {
+    background: #36B432;
+}
+
+.section5 .container .left-side .performa .inner h4,h5 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1vw;
+    line-height: 1.2vw;
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.section5 .container .left-side .left-para {
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 3vw;
+    color: #000000;
+}
+
+/* ------------------------section5 right-side----------------
+--------------  */
+
+.section5 .right-side {
+    width: 30%;
+    height: auto;
+    padding-top: 2vw;
+}
+
+.section5 .right-side img {
+    width: 100%;
+    height: auto;
+}
+
+/* ------------------------section6----------------
+--------------  */
+
+.section6 {
+    padding: 7vw;
+    width: 100%;
+    height: auto;
+    background-image: url(../images/section6\ img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.section6 h1 {
+    margin-bottom: 10vw;
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10vw;
+    line-height: 9vw;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #F55F34;
+    text-align: center;
+    text-shadow: -5px 4px 0px #F55F34;
+    transition: all 1s;
+}
+
+.section6 h1:hover {
+    color: #6052C2;
+}
+
+.section6:hover h1{
+    animation: fadeInDown;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+/* -----------------------------------------roadmap1 ------------
+-------------------*/
+
+.section6 .roadmap1 {
+    padding-left: 5vw;
+    width: 100%;
+    height: auto;
+}
+
+.section6:hover .roadmap1 h2 {
+    animation: fadeInUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.section6 .roadmap1 h2 {
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3vw;
+    line-height: 5vw;
+    color: #FFFFFF;
+    margin-left: 10vw;
+}
+
+.section6 .roadmap1 .description {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.section6 .roadmap1 .description .img1 {
+    width: 15vw;
+    height: 15vw;
+    z-index: 2;
+}
+
+.section6 .roadmap1 .description .img2 {
+    position: relative;
+    top: -5vw;
+    left: -5vw;
+    width: 40vw;
+    height: auto;
+    z-index: 1;
+}
+
+.section6 .roadmap1 .description ol li {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 2vw;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    top: 5vw;
+    left: -40vw;
+    z-index: 3;
+}
+
+
+/* -----------------------------------------roadmap2 ------------
+-------------------*/
+
+
+.section6 .roadmap2 {
+    padding-left: 5vw;
+    width: 100%;
+    height: auto;
+}
+
+.section6:hover .roadmap2 h2 {
+    animation: fadeInUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.section6 .roadmap2 h2 {
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3vw;
+    line-height: 5vw;
+    color: #FFFFFF;
+    margin-left: 30vw;
+    transition: all 1s;
+}
+
+.section6 .roadmap2 .description {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.section6 .roadmap2 .description .img1 {
+    width: 8vw;
+    height: 8vw;
+    z-index: 2;
+    position: relative;
+    top: -1vw;
+    left: -10vw;
+}
+
+.section6 .roadmap2 .description .img2 {
+    position: relative;
+    top: -5vw;
+    left: -5vw;
+    width: 40vw;
+    height: auto;
+    z-index: 1;
+}
+
+.section6 .roadmap2 .description ol li {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 2vw;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    top: 3.5vw;
+    left: 33vw;
+    z-index: 3;
+}
+
+/* -----------------------------------------roadmap3 ------------
+-------------------*/
+
+.section6 .roadmap3 {
+    padding-left: 5vw;
+    width: 100%;
+    height: auto;
+}
+
+.section6:hover .roadmap3 h2 {
+    animation: fadeInUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.section6 .roadmap3 h2 {
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3vw;
+    line-height: 5vw;
+    color: #FFFFFF;
+    margin-left: 10vw;
+}
+
+.section6 .roadmap3 .description {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.section6 .roadmap3 .description .img1 {
+    width: 10vw;
+    height: 10vw;
+    z-index: 2;
+    position: relative;
+    top: 10vw;
+}
+
+.section6 .roadmap3 .description .img2 {
+    position: relative;
+    top: -5vw;
+    left: -5vw;
+    width: 40vw;
+    height: auto;
+    z-index: 1;
+}
+
+.section6 .roadmap3 .description ol li {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 2vw;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    top: 5vw;
+    left: -39.5vw;
+    z-index: 3;
+    transition: all 2s;
+}
+
+/* ------------------------section7----------------
+--------------  */
+
+.section7 {
+    padding: 5vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(180deg, #FFA580 0%, #F55F34 140.99%);
+}
+
+.section7 .left {
+    width: 40%;
+    height: auto;
+}
+
+.section7 .left img {
+    width: 100%;
+    height: auto;
+}
+
+.section7 .right {
+    padding: 0vw 5vw;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.section7 .right h1 {
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10vw;
+    line-height: 9vw;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #000000;
+    text-shadow: -5px 4px 0px #000000;
+    transition: all 1s;
+}
+
+.section7 .right h1:hover{
+    color: #6052C2;
+}
+
+.section7 .right p {
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3vw;
+    line-height: 1.7vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.section7 .right .container {
+    background: #FBF7EB;
+    border: 5px solid #000000;
+    border-radius: 3vw;
+    padding: 2vw;
+    transition: all 1.5s;
+}
+
+.section7 .right .container:hover {
+    background: #36B432;
+}
+
+.section7 .right .container h2 {
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3vw;
+    line-height: 5vw;
+    color: #000000;
+}
+
+.section7 .right .container ul li {
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 2.4vw;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.section7 .right .buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.section7 .right a {
+    width: 30%;
+}
+
+.section7 .right a img {
+    width: 100%;
+}
+
+/* ------------------------footer----------------
+--------------  */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 2vw 10vw;
+    background-color: #000000;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav p {
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 1vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.86);
+}
+
+footer nav a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 5vw;
+    line-height: 5vw;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+}
+
+footer nav a img {
+    width: 5vw;
+    height: auto;
+}
+
+footer nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+
+/* -----------------------website responsive------------------
+----------------- */
+
+@media (max-width: 980px) {
+/* ---------------------------section1 navbar-------------
+--------------------- */
+
+.section1 nav {
+    width: 80%;
+    height: auto;
+}
+
+.section1 nav a img {
+    width: 6vw;
+    height: auto;
+}
+
+#btn1 {
+    padding: 1.1vw;
+    background: #ffffff;
+    transition: 0.5s;
+}
+
+#btn1:after {
+    content: '';
+    width: 2vw;
+    height: 2.6vw;
+    padding: 1.2vw;
+    top: -1px;
+    left: 1px;
+}
+
+#btn1 img {
+    padding: 0.2vw;
+    width: 2.2vw;
+}
+
+.section1 nav .nav-links {
+    gap: 1.5vw;
+}
+
+.section1 h1 {
+    margin-top: 20vw;
+}
+
+
+/* ------------------------------------section1 para's--------------
+---------------- */
+
+.section1 .first-para {
+    margin-top: 15vw;
+}
+
+.section1 .first-para,.second-para {
+    font-size: 6.5vw;
+}
+
+.section1 .second-para {
+    padding: 0vw 12vw;
+    font-size: 5vw;
+}
+
+/* --------------------------------section1 buttons---------------
+-------------------- */
+
+.section1 .buttons {
+    padding: 5vw 15%;
+}
+
+
+/* ------------------------------section2-------------
+---------------- */
+svg {
+    top: 0.5vw;
+}
+
+/* ------------------------------section2 left-------------
+---------------- */
+
+.section2 .left {
+    padding-top: 5vw;
+    padding-left: 10vw;
+}
+
+.section2 .left h2 {
+    font-size: 12vw;
+    line-height: 10vw;
+}
+
+.section2 .left p {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+}
+
+.section2 .left a {
+    width: 60%;
+}
+
+/* ------------------------------section2 right-------------
+---------------- */
+
+.section2 .right {
+    padding-top: 5vw;
+}
+
+/* ------------------------------------section3 left--------------
+---------------- */
+
+.section3 .left h1 {
+    margin-left: 12vw;
+    font-size: 11vw;
+    line-height: 10vw;
+    margin-bottom: 4vw;
+}
+
+.section3 .left .images img:nth-child(1) {
+    width: 17vw;
+}
+
+.section3 .left .images img:nth-child(2) {
+    width: 9vw;
+}
+
+/* ------------------------------------section3 right--------------
+---------------- */
+
+.section3 .right .para1 {
+    font-size: 2vw;
+    line-height: 3vw;
+}
+
+.section3 .right .bold {
+    font-size: 2.5vw;
+}
+
+.section3 .right h3 {
+    font-weight: 600;
+    font-size: 2.5vw;
+    letter-spacing: 0.15vw;
+    line-height: 3vw;
+    border-radius: 2vw;
+    width: 22vw;
+    height: auto;
+    text-shadow: 0.2vw 0.2vw 0.3vw #000000;
+    padding: 1vw;
+}
+
+.section3 .right a {
+    font-weight: 400;
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+
+.section3 .right .image {
+    width: 100%;
+    height: auto;
+    padding-top: 3vw;
+    padding-right: 7vw;
+}
+
+.section3 .right img {
+    width: 20vw;
+    height: auto;
+}
+
+/* ------------------------------------section4--------------
+---------------- */
+
+.section4 h1 {
+    font-size: 12vw;
+    line-height: 11vw;
+}
+
+.section4 a img {
+    width: 15vw;
+    height: auto;
+}
+
+.section4 a {
+    font-size: 3vw;
+    line-height: 4vw;
+}
+
+.section4 .left p {
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+
+.section4 .left #img1 {
+    width: 15vw;
+    height: auto;
+}
+
+/* ------------------------section4 right----------------
+--------------  */
+
+.section4 .right {
+    padding: 8vw 0vw 0vw 3vw;
+}
+
+.section4 .right p {
+    font-size: 2vw;
+    line-height: 3vw;;
+}
+
+
+/* ------------------------section5----------------
+--------------  */
+
+.section5 {
+    padding: 5vw 10vw;
+}
+
+
+/* ------------------------section5 left-side----------------
+--------------  */
+
+.section5 .container .left-side h1 {
+    font-size: 12vw;
+    line-height: 11vw;
+}
+
+.section5 .container .left-side h2 {
+    font-size: 3vw;
+    line-height: 5vw;
+}
+
+.section5 .container .left-side p {
+    font-size: 2vw;
+    line-height: 3vw;
+}
+
+.section5 .container .left-side .heading h3 {
+    font-size: 1.7vw;
+    line-height: 2.5vw;
+}
+
+.section5 .container .left-side .performa .outer {
+    width: 12vw;
+    height: 4vw;
+}
+
+.section5 .container .left-side .performa .inner {
+    padding: 0.7vw 1vw;
+    width: 12vw;
+    height: 4vw;
+    position: relative;
+    top: -0.7vw;
+    left: -0.7vw;
+}
+
+.section5 .container .left-side .performa .inner h4,h5 {
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+}
+
+.section5 .container .left-side .left-para {
+    font-size: 1.5vw;
+    line-height: 3vw;
+}
+
+/* ------------------------section5 right-side----------------
+--------------  */
+
+.section5 .right-side {
+    width: 30%;
+    height: auto;
+    padding-top: 3vw;
+}
+
+/* ------------------------section6----------------
+--------------  */
+
+.section6 h1 {
+    margin-bottom: 12vw;
+    font-size: 12vw;
+    line-height: 9vw;
+}
+
+/* -----------------------------------------roadmap1 ------------
+-------------------*/
+
+.section6 .roadmap1 {
+    padding-left: 5vw;
+    width: 100%;
+    height: auto;
+}
+
+.section6 .roadmap1 h2 {
+    font-size: 4vw;
+    line-height: 6vw;
+}
+
+
+.section6 .roadmap1 .description .img1 {
+    width: 15vw;
+    height: 15vw;
+    z-index: 2;
+}
+
+.section6 .roadmap1 .description .img2 {
+    width: 45vw;
+    height: auto;
+    z-index: 1;
+}
+
+.section6 .roadmap1 .description ol li {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    position: relative;
+    top: 3vw;
+    left: -42vw;
+    z-index: 3;
+}
+
+/* -----------------------------------------roadmap2 ------------
+-------------------*/
+
+
+.section6 .roadmap2 {
+    padding-left: 5vw;
+    width: 100%;
+    height: auto;
+}
+
+.section6 .roadmap2 h2 {
+    font-size: 4vw;
+    line-height: 6vw;
+    margin-left: 35vw;
+}
+
+.section6 .roadmap2 .description .img1 {
+    width: 15vw;
+    height: 15vw;
+    z-index: 2;
+    position: relative;
+    top: -1vw;
+    left: 0vw;
+}
+
+.section6 .roadmap2 .description .img2 {
+    position: relative;
+    top: -5vw;
+    left: 5vw;
+    width: 45vw;
+    height: auto;
+}
+
+.section6 .roadmap2 .description ol li {
+    font-size: 1.3vw;
+    line-height: 2.5vw;
+    position: relative;
+    top: 4vw;
+    left: 39vw;
+}
+
+/* -----------------------------------------roadmap3 ------------
+-------------------*/
+
+.section6 .roadmap3 {
+    padding-left: 5vw;
+}
+
+.section6 .roadmap3 h2 {
+    font-size: 4vw;
+    line-height: 6vw;
+    margin-left: 10vw;
+}
+
+.section6 .roadmap3 .description .img1 {
+    width: 15vw;
+    height: 15vw;
+    z-index: 2;
+    position: relative;
+    top: 10vw;
+}
+
+.section6 .roadmap3 .description .img2 {
+    position: relative;
+    top: -5vw;
+    left: -5vw;
+    width: 45vw;
+    height: auto;
+}
+
+.section6 .roadmap3 .description ol li {
+    font-size: 1.25vw;
+    line-height: 2vw;
+    position: relative;
+    top: 5vw;
+    left: -42vw;
+}
+
+/* ------------------------section7----------------
+--------------  */
+
+.section7 .right {
+    padding: 0vw 5vw;
+    gap: 2vw;
+}
+
+.section7 .right h1 {
+    font-size: 12vw;
+    line-height: 11vw;
+}
+
+.section7 .right p {
+    font-size: 1.5vw;
+    line-height: 2vw;
+}
+
+.section7 .right .container {
+    background: #FBF7EB;
+    border: 3px solid #000000;
+    border-radius: 3vw;
+    padding: 2vw;
+}
+
+.section7 .right .container h2 {
+    font-size: 4vw;
+    line-height: 6vw;
+}
+
+.section7 .right .container ul li {
+    font-size: 1.5vw;
+    line-height: 2.4vw;
+}
+
+.section7 .right .buttons {
+    gap: 1.5vw;
+}
+
+.section7 .right .buttons a {
+    width: 35%;
+}
+
+/* ------------------------footer----------------
+--------------  */
+
+footer {
+    padding: 3vw 10vw;
+}
+
+footer nav a {
+    gap: 1vw;
+    font-size: 5vw;
+    line-height: 5vw;
+}
+
+footer nav a img {
+    width: 5vw;
+    height: auto;
+}
+
+footer nav .nav-links {
+    gap: 2vw;
+}
+
+}
+
+@media (max-width: 768px) {
+/* -----------------------section1-------------
+---------------------- */
+
+
+/* ---------------------------section1 navbar-------------
+--------------------- */
+
+.section1 nav {
+    width: 80%;
+    height: auto;
+    padding: 2vw 7vw 2vw 7vw;
+}
+
+.section1 nav a {
+    gap: 2vw;
+    font-size: 6vw;
+    line-height: 6vw;
+}
+
+.section1 nav a img {
+    width: 6vw;
+    height: auto;
+}
+
+#btn1 {
+    padding: 1.1vw;
+    position: relative;
+}
+
+#btn1:after {
+    content: '';
+    width: 2vw;
+    height: 2.6vw;
+    padding: 1.2vw;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: 1px;
+}
+
+#btn1 img {
+    padding: 0.2vw;
+    width: 2.2vw;
+}
+
+.section1 nav .nav-links {
+    gap: 2vw;
+}
+
+.section1 h1 {
+    margin-top: 17vw;
+}
+
+.section1 .section1-img {
+    width: 42%;
+    height: auto;
+}
+
+/* ------------------------------------section1 para's--------------
+---------------- */
+
+.section1 .first-para {
+    margin-top: 15vw;
+    margin-bottom: 1.5vw;
+}
+
+.section1 .first-para,.second-para {
+    font-size: 7vw;
+}
+
+.section1 .second-para {
+    padding: 0vw 13vw;
+    font-size: 5vw;
+}
+
+/* --------------------------------section1 buttons---------------
+-------------------- */
+
+.section1 .buttons {
+    gap: 2vw;
+    padding: 5vw 10%;
+}
+
+/* ------------------------------section2-------------
+---------------- */
+svg {
+    position: relative;
+    top: 0.5vw;
+}
+
+/* ------------------------------section2 left-------------
+---------------- */
+
+.section2 .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 55%;
+    height: auto;
+    padding-top: 5vw;
+    padding-left: 5vw;
+}
+
+.section2 .left h2 {
+    font-size: 12vw;
+    line-height: 11vw;
+}
+
+.section2 .left p {
+    font-size: 1.7vw;
+    line-height: 2.5vw;
+}
+
+.section2 .left a {
+    width: 55%;
+    position: relative;
+    left: -1vw;
+}
+
+.section2 .left a img {
+    width: 100%;
+}
+
+/* ------------------------------section2 right-------------
+---------------- */
+
+.section2 .right {
+    width: 45%;
+    height: auto;
+    padding-top: 2vw;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.section2 .right img {
+    width: 100%;
+}
+
+/* ------------------------------------section3--------------
+---------------- */
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------------------------section3 left--------------
+---------------- */
+
+.section3 .left {
+    width: 100%;
+    height: auto;
+    padding: 8vw 5vw 0vw 5vw;
+}
+
+.section3 .left .head {
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+}
+
+.section3 .left h1 {
+    margin-left: 0vw;
+    font-size: 12vw;
+    line-height: 11vw;
+}
+
+.section3 .left .images {
+    width: 100%;
+    padding-left: 0vw;
+    padding-top: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section3 .left .images img:nth-child(1) {
+    width: 15vw;
+}
+
+.section3 .left .images img:nth-child(2) {
+    width: 10vw;
+}
+
+/* ------------------------------------section3 right--------------
+---------------- */
+
+.section3 .right {
+    width: 100%;
+    height: auto;
+    padding-top: 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5vw;
+    position: relative;
+    top: -18vw;
+}
+
+.section3 .right .para1 {
+    font-size: 2vw;
+    line-height: 3vw;
+}
+
+.section3 .right .bold {
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.section3 .right h3 {
+    font-weight: 600;
+    letter-spacing: 0.2vw;
+    font-size: 3.5vw;
+    line-height: 5vw;
+    width: 30vw;
+    height: auto;
+    padding: 1vw;
+    margin-top: 2vw;
+    text-shadow: 0.2vw 0.2vw 0.4vw #000000;
+}
+
+.section3 .right a {
+    font-weight: 400;
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    margin-top: 2vw;
+}
+
+.section3 .right .image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0vw;
+    padding-right: 0vw;
+    position: relative;
+    top: 7vw;
+}
+
+.section3 .right img {
+    width: 20vw;
+    height: auto;
+}
+
+/* ------------------------------------section4--------------
+---------------- */
+
+.section4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.section4 .head {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.section4 h1 {
+    font-size: 12vw;
+    line-height: 11vw;
+}
+
+.section4 a img {
+    width: 20vw;
+    height: auto;
+}
+
+.section4 a {
+    gap: 2vw;
+    font-size: 3vw;
+    line-height: 4vw;
+}
+
+.section4 .left {
+    padding: 8vw 3vw 0vw 13vw;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    background: #DAFFD9;
+}
+
+.section4 .left p {
+    font-size: 2.5vw;
+    line-height: 2vw;
+}
+
+.section4 .left .image {
+    width: 100%;
+    height: auto;
+}
+
+.section4 .left .image a img {
+    width: 25vw;
+    height: auto;
+}
+
+.section4 .left #img1 {
+    width: 20vw;
+    height: auto;
+}
+
+/* ------------------------section4 right----------------
+--------------  */
+
+.section4 .right {
+    width: 100%;
+    padding: 1vw 3vw 3vw 13vw;
+    background: #FFDBDB;
+}
+
+.section4 .right p {
+    padding-right: 8vw;
+    margin: 3vw 0vw;
+    font-size: 2vw;
+    line-height: 3vw;
+}
+
+.section4 .right .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+/* ------------------------section5----------------
+--------------  */
+
+.section5 {
+    padding: 5vw 5vw;
+}
+
+/* ------------------------section5 left-side----------------
+--------------  */
+
+.section5 .container .left-side h1 {
+    font-size: 10vw;
+    line-height: 9vw;
+}
+
+.section5 .container .left-side h2 {
+    font-size: 4vw;
+    line-height: 6vw;
+}
+
+.section5 .container .left-side p {
+    font-size: 2.5vw;
+    line-height: 3.5vw;
+}
+
+.section5 .container .left-side .heading {
+    display: flex;
+    flex-direction:row;
+    gap: 2vw;
+    margin-bottom: 2vw;
+}
+
+.section5 .container .left-side .heading h3 {
+    font-size: 2vw;
+    line-height: 2.5vw;
+}
+
+.section5 .container .left-side .performa {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.section5 .container .left-side .performa .left {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.section5 .container .left-side .performa .right {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.section5 .container .left-side .performa .outer {
+    width: 20vw;
+    height: 7vw;
+}
+
+.section5 .container .left-side .performa .inner {
+    padding: 0.7vw 1vw;
+    width: 20vw;
+    height: 7vw;
+    top: -1.2vw;
+    left: -1vw;
+}
+
+.section5 .container .left-side .performa .inner h4,h5 {
+    font-size: 2vw;
+    line-height: 2.5vw;
+}
+
+.section5 .container .left-side .left-para {
+    font-size: 2vw;
+    line-height: 3vw;
+    margin-top: 0.5vw;
+}
+
+/* ------------------------section5 right-side----------------
+--------------  */
+
+.section5 .right-side {
+    width: 30%;
+    height: auto;
+    padding-top: 10vw;
+}
+
+/* ------------------------section6----------------
+--------------  */
+
+.section6 {
+    padding: 7vw 2vw;
+}
+
+.section6 h1 {
+    margin-bottom: 10vw;
+    font-size: 13vw;
+    line-height: 11vw;
+}
+
+/* -----------------------------------------roadmap1 ------------
+-------------------*/
+
+.section6 .roadmap1 {
+    padding-left: 5vw;
+}
+
+.section6 .roadmap1 h2 {
+    font-size: 5vw;
+    line-height: 7vw;
+    margin-left: 10vw;
+}
+
+.section6 .roadmap1 .description .img2 {
+    position: relative;
+    top: -5vw;
+    left: -5vw;
+    width: 50vw;
+}
+
+.section6 .roadmap1 .description ol li {
+    font-size: 1.5vw;
+    line-height: 3vw;
+    position: relative;
+    top: 5vw;
+    left: -45vw;
+}
+
+/* -----------------------------------------roadmap2 ------------
+-------------------*/
+
+
+.section6 .roadmap2 {
+    padding-left: 5vw;
+}
+
+.section6 .roadmap2 h2 {
+    font-size: 5vw;
+    line-height: 7vw;
+    margin-left: 30vw;
+    position: relative;
+    top: -2vw;
+}
+
+.section6 .roadmap2 .description .img1 {
+    width: 12vw;
+    height: 12vw;
+    position: relative;
+    top: -1vw;
+    left: -5vw;
+}
+
+.section6 .roadmap2 .description .img2 {
+    position: relative;
+    top: -7vw;
+    left: 0vw;
+    width: 50vw;
+}
+
+.section6 .roadmap2 .description ol li {
+    font-size: 1.5vw;
+    line-height: 3vw;
+    position: relative;
+    top: 3.5vw;
+    left: 41vw;
+}
+
+/* -----------------------------------------roadmap3 ------------
+-------------------*/
+
+.section6 .roadmap3 {
+    padding-left: 5vw;
+}
+
+.section6 .roadmap3 h2 {
+    font-size: 5vw;
+    line-height: 7vw;
+}
+
+.section6 .roadmap3 .description .img1 {
+    width: 15vw;
+    height: 15vw;
+    z-index: 2;
+    position: relative;
+    top: 13vw;
+}
+
+.section6 .roadmap3 .description .img2 {
+    position: relative;
+    top: -5vw;
+    left: -5vw;
+    width: 50vw;
+}
+
+.section6 .roadmap3 .description ol li {
+    font-size: 1.5vw;
+    line-height: 3vw;
+    /* or 141% */
+    position: relative;
+    top: 5.5vw;
+    left: -45vw;
+}
+
+/* ------------------------section7----------------
+--------------  */
+
+.section7 {
+    padding: 0vw 5vw 5vw 5vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.section7 .left {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section7 .left img {
+    width: 50%;
+    height: auto;
+}
+
+.section7 .right {
+    padding: 0vw 5vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.section7 .right h1 {
+    font-size: 12vw;
+    line-height: 9vw;
+}
+
+.section7 .right p {
+    font-size: 2vw;
+    line-height: 2.5vw;
+}
+
+.section7 .right .container h2 {
+    font-size: 5vw;
+    line-height: 7vw;
+}
+
+.section7 .right .container ul li {
+    font-size: 2vw;
+    line-height: 3vw;
+}
+
+.section7 .right .buttons {
+    width: 100%;
+    gap: 2vw;
+}
+
+.section7 .right .buttons a {
+    width: 40%;
+}
+
+.section7 .right .buttons a img {
+    width: 100%;
+}
+
+/* ------------------------footer----------------
+--------------  */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 3vw 7vw;
+    background-color: #000000;
+}
+
+footer nav p {
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.86);
+}
+
+footer nav a {
+    align-items: center;
+    gap: 1vw;
+    font-size: 7vw;
+    line-height: 7vw;
+    letter-spacing: -0.02em;
+}
+
+footer nav a img {
+    width: 7vw;
+    height: auto;
+}
+
+}
